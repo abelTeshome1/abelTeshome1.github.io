@@ -1,0 +1,11 @@
+# Submit server .submit file for
+#  Course CMSC132
+#  Project GP1: Group Project 1
+
+courseName=CMSC132
+semester=201905
+projectNumber=GP1
+courseKey=bcacf70d2d02c97d
+authentication.type=ldap
+baseURL=https://submit.cs.umd.edu:443/summer2019
+submitURL=https://submit.cs.umd.edu:443/summer2019/eclipse/SubmitProjectViaEclipse
