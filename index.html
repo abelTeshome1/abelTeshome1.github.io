@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> The Promised Neverland </title>
+	
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        .imageCont {
+          text-align: center;
+        }
+      </style>
+
+</head>
+<body>
+	<div class="banner-text">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Projects</li>
+			<li>Contact</li>
+        </ul>
+
+        <h2 style = "font-family: 'Baloo 2', cursive">My Portfolio</h2>
+
+        <button type="button" id = "animation" onclick= "stopAnimation()">Stop Animation</button>
+        
+    </div>
+    
+	<div class="animation-area">
+		<ul class="box-area" id = "ok">
+          
+			<li></li>
+			<li></li>
+			<li></li>
+            <li></li>
+            <li></li>
+            
+            <li></li>
+
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+        </ul>
+        
+	</div>
+</body>
+
+
+<script>
+
+    function stopAnimation(){
+
+        for(i = 0 ; i < targetDiv.length; i++){
+            if(targetDiv[i].style.animationPlayState === "paused"){
+                targetDiv[i].style.animationPlayState = "running";
+
+            }else{
+                targetDiv[i].style.animationPlayState = "paused";
+
+            }
+            
+        }
+    }
+    
+    var listElem = document.getElementById("box-area")
+    var targetDiv = document.getElementById("ok").getElementsByTagName("li")
+    var spacing = 8;
+    var start = 0;
+
+    for(i = 0 ; i < targetDiv.length; i++){
+        var side = Math.floor(Math.random() * 60) + 30
+        var dur = (Math.random() * 10) + 2
+        var delay = Math.floor(Math.random() * 10) 
+
+        targetDiv[i].style.width = `${side}px`;
+        targetDiv[i].style.height = `${side}px`;
+        targetDiv[i].style.animationDuration = `${dur}s`;
+        targetDiv[i].style.animationDelay = `${delay}s`;
+        targetDiv[i].style.animation = `animate ${dur}s linear infinite`;
+        targetDiv[i].style.left = `${start}%`;
+        start = start + spacing;
+
+    }
+
+    
+
+</script>
+</html>
