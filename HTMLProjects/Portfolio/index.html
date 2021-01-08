@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Portfolio Abel Teshome</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+
+						<h2>Abel Teshome</h2>
+						
+						<h3 >Interests</h3>
+						<ul> <li> Full Stack Development </li> <li> Machine Learning</li> <li> Mobile App Developement</li> </ul>
+
+						<div class="animation-area">
+							<ul class="box-area" id = "ok">
+							  
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								
+								<li></li>
+					
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							
+						</div>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+
+					
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">Projects</div>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+					
+						<ul class="links">
+							
+							<li ><a style = "right: auto;" href="./images/ResumeNoAddress.pdf">Resume</a></li>
+							<li><a href="https://github.com/abelTeshome1" class="icon brands fa-github fa-2x"><span class="label">GitHub</span></a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										
+										<h2><a >Bill Splitter Simulation  <br /> </a></h2>
+										<h3>(Prototype)</h3>
+									</header>
+
+									<video width="420" height = "315" controls>
+										<source src="./images/MoneySimulation.mp4" type="video/mp4">
+										Your browser does not support HTML video.
+									    </video>
+
+									<p style = "line-height: 1.2; margin-top: 5%;">
+										An android application designed to split bills among groups using a virtual currency as a supplement to real money. Utilized google firebase to create user authentication and to store user information such as email address, balance, and tabs. 
+									</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/abelTeshome1/MoneySimulation" class="button">View On Github</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2 style = "margin-bottom: 18%;"><a >Tetris<br /> </a></h2>
+									</header >
+									
+										<video width="420" height = "315" controls>
+										<source src="./images/TetrisDemo.mp4" type="video/mp4">
+										Your browser does not support HTML video.
+									    </video>
+									
+									<p style = "line-height: 1.4; margin-top: 5%;"> School project tasked with creating Alexey Pajitnov’s Tetris puzzle game. The project focused on topics such as abstraction, inheritance, and two-dimensional arrays. Completed through object-oriented design in Java.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="#">Six Degrees of Kevin Bacon<br /> </a></h2>
+									</header>
+								
+									<p style = "line-height: 1.4; margin-top: 5%;">Provided with a given database of movies and actors, the program determines the distance,
+										through connections, from actor Kevin Bacon to a provided actor from the user. Utilized
+										object-oriented programming in Java and various graphing algorithms.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="#">Cybersecurity </a></h2>
+									</header>
+									
+									<p style = "line-height: 1.4; margin-top: 5%;">
+										Created a secure web forum where users can communicate. Added to database through SQLite that stores user information, such as username, password and comments made by the user.  Sanitized inputs to protected against XSS attacks.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github</a></li>
+									</ul>
+								</article>
+								
+							</section>
+
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Abel Teshome 2021</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script >
+
+				let listElem = document.getElementById("box-area")
+				let targetDiv = document.getElementById("ok").getElementsByTagName("li")
+				let spacing = 9;
+				let start = 2;
+			
+				for(i = 0 ; i < targetDiv.length; i++){
+					let side = Math.floor(Math.random() * 50) + 30
+					let dur = (Math.random() * 10) + 3
+					let delay = Math.floor(Math.random() * 10) + 3
+			
+					targetDiv[i].style.width = `${side}px`;
+					targetDiv[i].style.height = `${side}px`;
+					targetDiv[i].style.animationDuration = `${dur}s`;
+					targetDiv[i].style.animationDelay = `${delay}s`;
+					targetDiv[i].style.animation = `animate ${dur}s linear infinite`;
+					targetDiv[i].style.left = `${start}%`;
+					start = start + spacing;
+			
+				}	
+			
+			</script>
+
+	</body>
+</html>
