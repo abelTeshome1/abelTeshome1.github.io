@@ -16,10 +16,15 @@
 				<!-- Intro -->
 					<div id="intro">
 
-						<h2>Abel Teshome</h2>
+						<h2 style = "margin-bottom: 2%;">Abel Teshome</h2>
+
+						<h3 style = "font: bold;">About</h3>
+						<p style = "margin-left: 8%; margin-right: 8%;">I'm a senior in Computer Science, graduating from University of Maryland, College Park in Spring 2021. 
+							I'm seeking full time employment in areas of machine learning, full stack development,
+							and mobile application development.
+						</p>
 						
-						<h3 >Interests</h3>
-						<ul> <li> Full Stack Development </li> <li> Machine Learning</li> <li> Mobile App Developement</li> </ul>
+						
 
 						<div class="animation-area">
 							<ul class="box-area" id = "ok">
@@ -57,8 +62,8 @@
 					
 						<ul class="links">
 							
-							<li ><a style = "right: auto;" href="./images/ResumeNoAddress.pdf">Resume</a></li>
-							<li><a href="https://github.com/abelTeshome1" class="icon brands fa-github fa-2x"><span class="label">GitHub</span></a></li>
+							<li ><a style = "right: auto;" href="./images/ResumeOnPortfolio.pdf">Resume</a></li>
+							<li><a href="https://github.com/abelTeshome1" ><span class="label">GitHub</span></a></li>
 							
 						</ul>
 					</nav>
@@ -71,7 +76,7 @@
 								<article>
 									<header>
 										
-										<h2><a >Bill Splitter Simulation  <br /> </a></h2>
+										<h2 style = text-decoration:underline><a >Bill Splitter Simulation  <br /> </a></h2>
 										<h3>(Prototype)</h3>
 									</header>
 
@@ -80,9 +85,10 @@
 										Your browser does not support HTML video.
 									    </video>
 
-									<p style = "line-height: 1.2; margin-top: 5%;">
-										An android application designed to split bills among groups using a virtual currency as a supplement to real money. Utilized google firebase to create user authentication and to store user information such as email address, balance, and tabs. 
-									</p>
+									<div style = "line-height: 1.4; margin-top: 5%;text-align:justify;word-spacing:-2px;">
+										A prototype android application designed to split bills among groups using a virtual currency as a supplement to real money.  
+									</div>
+
 									<ul class="actions special">
 										<li><a href="https://github.com/abelTeshome1/MoneySimulation" class="button">View On Github</a></li>
 									</ul>
@@ -90,7 +96,7 @@
 								<article>
 									<header>
 										
-										<h2 style = "margin-bottom: 18%;"><a >Tetris<br /> </a></h2>
+										<h2 style = "margin-bottom: 18%; text-decoration:underline "><a >Tetris<br /> </a></h2>
 									</header >
 									
 										<video width="420" height = "315" controls>
@@ -98,34 +104,39 @@
 										Your browser does not support HTML video.
 									    </video>
 									
-									<p style = "line-height: 1.4; margin-top: 5%;"> School project tasked with creating Alexey Pajitnov’s Tetris puzzle game. The project focused on topics such as abstraction, inheritance, and two-dimensional arrays. Completed through object-oriented design in Java.</p>
+
+									<div style = "line-height: 1.4; margin-top: 5%;margin-bottom: 5%;text-align:justify;word-spacing:-2px;"> 
+										School project tasked with creating Alexey Pajitnov’s Tetris puzzle game.  
+									</div>
 									<ul class="actions special">
-										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github</a></li>
+										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github (Please contact)</a></li>
+										
 									</ul>
+									<!-- <p style = "text-align: center;">Please contact for access</p> -->
 								</article>
 								<article>
 									<header>
 										
-										<h2><a href="#">Six Degrees of Kevin Bacon<br /> </a></h2>
+										<h2 style = text-decoration:underline><a href="#">Six Degrees of Kevin Bacon<br /> </a></h2>
 									</header>
 								
-									<p style = "line-height: 1.4; margin-top: 5%;">Provided with a given database of movies and actors, the program determines the distance,
-										through connections, from actor Kevin Bacon to a provided actor from the user. Utilized
-										object-oriented programming in Java and various graphing algorithms.</p>
+									<div style = "line-height: 1.4; margin-top: 4%; margin-bottom: 4%;text-align:justify;word-spacing:-2px;">Provided with a given database of movies and actors, the program determines the distance,
+										through connections, from actor Kevin Bacon to a provided actor from the user. </div>
 									<ul class="actions special">
-										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github</a></li>
+										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github (Please contact)</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
 										
-										<h2><a href="#">Cybersecurity </a></h2>
+										<h2 style = text-decoration:underline><a href="#">Cybersecurity </a></h2>
 									</header>
 									
-									<p style = "line-height: 1.4; margin-top: 5%;">
-										Created a secure web forum where users can communicate. Added to database through SQLite that stores user information, such as username, password and comments made by the user.  Sanitized inputs to protected against XSS attacks.</p>
+									<div style = "line-height: 1.4; margin-top: 4%; margin-bottom: 4%;text-align:justify;word-spacing:-2px;">
+										Created a secure web forum where users can communicate. SQLite database that stores user information, such as username, password and comments made by the user.
+									</div>
 									<ul class="actions special">
-										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github</a></li>
+										<li><a href="https://github.com/abelTeshome1" class="button">Private On Github (Please contact)</a></li>
 									</ul>
 								</article>
 								
@@ -158,8 +169,8 @@
 			
 				for(i = 0 ; i < targetDiv.length; i++){
 					let side = Math.floor(Math.random() * 50) + 30
-					let dur = (Math.random() * 10) + 3
-					let delay = Math.floor(Math.random() * 10) + 3
+					let dur = (Math.random() * 5) + 5
+					let delay = Math.floor(Math.random() * 10) + 10
 			
 					targetDiv[i].style.width = `${side}px`;
 					targetDiv[i].style.height = `${side}px`;
